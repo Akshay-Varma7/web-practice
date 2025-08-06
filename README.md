@@ -1,2 +1,4 @@
 # git-practice
-This is my first repo. It's for practicing git/ git hub.
+This is my first repo, for practicing git/ git hub.
+<br>
+project-amazon clone
