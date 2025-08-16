@@ -8,9 +8,25 @@
     <link rel="stylesheet" href="amazon.css">
 </head>
 <body>
-    <header>
-        <div class="navbar"> 
-
+    <header><!-- header=top section of a webpage containing navigation,logo -->
+        <div class="navbar"> <!-- the nav black bar -->
+            <!-- Purpose of nesting:(layout vs image)+ Flexibility to add text =common ui practice -->
+            <!-- box-1 -->
+            <div class="nav-logo border"><!-- 2 classes -->
+                <div class="logo"></div><!-- the main image -->
+            </div>
+            <!-- box-2 -->
+            <div class="nav-address border"><!-- giving predifined class for hover -->
+                <p class="add-first">Deliver to</p>
+                <!-- icon and india the same level -->
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-sec">India</p>
+                </div>
+            </div>
+            <!-- box-3 -->
+            <div class="nav-search">
+            </div>
         </div>
     </header>
 </body>

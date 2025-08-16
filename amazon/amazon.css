@@ -1,10 +1,60 @@
+/*link html to css
+1.by <link rel="stylesheet" href="">-in html head last
+2.by <style> here </style>- in head last
+link css to html(after 1)
+3.by .logo type */
 *{
-    margin: 0;/*preset*/
-    font-family :Arial;/*decided a font*/
+    margin: 0;/* Reset default margin */
+    font-family :Arial;/*set font for all elements*/
     border; border-box;/* ??*/
 }
-.navbar{
+/* A <div> without content has no size (0x0),  
+   so you need height/width or styling to make it visible */
+/*a div spans horizontally and vertically by width and hieght
+  deafult to left side 
+  if not down by down and need in all child div horizontally in the parent div use display:flex */
+
+  /*navigation bar*/
+.navbar{/*full horizontal span as width not mentioned*/
     height: 60px;
     background-color: #0f1111;
     color: white;/*text colour*/
+    display: flex;
+    align-items: center;
+}
+/*box-1*/
+.nav-logo{
+    height: 50px;
+    width: 100px;
+}
+/*<img> → visible by default (uses image’s size).
+<div> with background-image → needs height & width, otherwise it won’t show.*/
+.logo{
+    height: 50px;
+    width: 100%;
+    background-image: url("amazon_logo.png");
+    background-size: cover;/* ensures the image covers the box */
+}
+.border{
+    border: 1px solid transparent;
+}
+/*border outside is the class of that div*/
+.border:hover{
+    border: 1px solid white;
+}
+/*box-2*/
+.add-first{
+    color: #cccccc;
+    font-size: 0.85rem;/*rem- to make it responsive to screen resolution*/
+    margin-left: 20px;
+}
+/*margin left as the tect start after the icon to see*/
+.add-sec{
+    font-size: 1rem;
+    margin-left: 1px;
+}
+/*as icon and india shld be in same line so contain the parent div of both as display flex*/
+.add-icon{
+    display: flex;
+    align-items: center;
 }
