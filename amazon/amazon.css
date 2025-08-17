@@ -21,6 +21,7 @@ link css to html(after 1)
     color: white;/*text colour*/
     display: flex;
     align-items: center;
+    justify-content: space-evenly;/*becomes flexible moves to left as new boxes add*/
 }
 /*box-1*/
 .nav-logo{
@@ -58,4 +59,42 @@ link css to html(after 1)
 .add-icon{
     display: flex;
     align-items: center;
+}
+/*box 3*/
+.nav-search{
+    display: flex;/*for same line of tags inside*//*must before justify contenet*/
+    justify-content: space-evenly;
+    background-color: pink;
+    width: 620px;
+    height: 40px;
+    border-radius: 5px;/*for 4 sides curve*/
+}
+.search-select{
+    background-color: #E6E6E6;
+    width: 50px;
+    text-align: center;
+    /*border-radius: 5px;for 4 corners*/
+    /*for left top and bottom only*/
+    border-top-left-radius: 5px ;
+    border-bottom-left-radius: 5px;
+}
+.search-input{
+    width: 100%;/*this way give only to select and icon then search input occupies*/
+    font-size: 1rem;
+    border: none;/*by default border for input-box removed*/
+    /*height 100% by deafult*/
+}
+.search-icon{
+    width: 45px;
+    /*here if this kept the input adjusts due to 100% width*/
+    /*height 100% by deafult*/
+    display: flex;/*must before justify contenet*/
+    justify-content: center;/*horizontally center*/
+    align-items: center;/*vertically center*/
+    font-size: 1.2rem;/*to increase icon size*/
+    background-color: rgb(255, 128, 0);
+     border-top-right-radius: 5px ;
+    border-bottom-right-radius: 5px;
+    color: #0f1111;/*for text and icons*/
+
 }
