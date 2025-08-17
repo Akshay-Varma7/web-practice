@@ -96,5 +96,23 @@ link css to html(after 1)
      border-top-right-radius: 5px ;
     border-bottom-right-radius: 5px;
     color: #0f1111;/*for text and icons*/
-
+}
+.nav-search:hover{/*tells this style is all hover*/
+    border: 2px solid orange;
+}
+/*box-4*/
+span{/*direct use*/
+    font-size: 0.7rem;
+}
+.navsign-second{
+    font-size: 0.85rem;
+    font-weight: 700;/*dark bolder intensity of text*/
+}
+/*box-6*/
+.nav-cart i{/*combination of selectors*/
+    font-size: 30px;/*text and icons font size and color is best*/
+}
+.nav-cart{
+    font-size: 0.85rem;
+    font-weight: 700;
 }
