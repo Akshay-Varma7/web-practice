@@ -143,3 +143,15 @@ span{/*direct use*/
     background-size: cover;/*image fit*/
     height: 500px;
 }
+.hero-msg{
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 0.85rem;
+}
+.hero-msg a{
+    color: #007185;
+}
