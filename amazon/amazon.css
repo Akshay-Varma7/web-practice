@@ -105,7 +105,7 @@ span{/*direct use*/
     font-size: 0.7rem;
 }
 .navsign-second{
-    font-size: 0.85rem;
+    font-size: 0.85rem;/*14px=0.85rem*/
     font-weight: 700;/*dark bolder intensity of text*/
 }
 /*box-6*/
@@ -141,7 +141,7 @@ span{/*direct use*/
 .hero-section{
     background-image: url("hero_image.jpg");
     background-size: cover;/*image fit*/
-    height: 400px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: flex-end;/*imp*/
@@ -160,3 +160,15 @@ span{/*direct use*/
 .hero-msg a{
     color: #007185;
 }
+/*box-section*/
+.shop-section{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+}
+.box{/*for same styling for all boxes*/
+    border: 2px solid black;
+    height: 400px;
+    width: 23%;
+    background-color: white;
+}/*if no height & width then default 100%*/

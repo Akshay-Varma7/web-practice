@@ -1,7 +1,5 @@
-This is a amazon-landing-page.
+This is a amazon-landing-page.(educational purpose)
 <br>
-I used amazon.com to clone.
+I used amazon.com to do a basic clone.
 <br>
-To undestand how to use html+css and make frontend.
-<br>
-(educational purpose)
+HTML+CSS
