@@ -6,7 +6,7 @@ link css to html(after 1)
 *{
     margin: 0;/* Reset default margin */
     font-family :Arial;/*set font for all elements*/
-    border; border-box;/* ??*/
+    border: border-box;/* ??*/
 }
 /* A <div> without content has no size (0x0),  
    so you need height/width or styling to make it visible */
@@ -163,12 +163,31 @@ span{/*direct use*/
 /*box-section*/
 .shop-section{
     display: flex;
+    flex-wrap: wrap;/*allows max 4 to one line*//*By default, flex items never wrap.*/
     justify-content: space-evenly;
     background-color: #e2e7e6;
+    /*By default, flex items never wrap. its the reason that it will igone the width and space evenly as fle dominates*/
 }
+/*boxes*/
+/*using classes for TEMPLATING*/
 .box{/*for same styling for all boxes*/
-    border: 2px solid black;
     height: 400px;
-    width: 23%;
+    width: 23%; /* relative to parent width */
     background-color: white;
+    padding: 20px 0px 15px;/**/
+    margin-top:15px; /*to avoid collision with hero img*/
 }/*if no height & width then default 100%*/
+.box-img{/*for img to show need height*/
+    height: 300px;
+    background-size: cover;/*to cover not contain(may come 2 to fill by full frame) the img full*/
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.box-content{/*for the content*/
+    margin-left: 1rem;
+    margin-right: 1rem;/*16px=1rem*/
+}
+/*padding: 10px; top, right, bottom, left = 10px */
+/*padding: 10px 20px; top/bottom = 10px, left/right = 20px */
+/*padding: 20px 0px 15px; top = 20px, left & right = 0px, bottom = 15px */
+/*padding: 20px 1px 2px 15px; top = 20px, left =1px, right = 2px, bottom = 15px */
