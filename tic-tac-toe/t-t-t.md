@@ -13,4 +13,4 @@ Winning patterns:<br>(Total:8 such even if one satisfied player wins)<br>
  3.diagonally:[0,4,8],[2,4,6]
 <br>
 <br>
-player1,player2.
+player1-,player2-.+ 9 clickable boxes (by buttons)+ when press X/O based on player.

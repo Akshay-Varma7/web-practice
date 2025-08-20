@@ -1,0 +1,17 @@
+.{/*kept at starting*/
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #548687;
+    align-items: center;/*align-items only works on flex or grid containers.*/
+}
+.container{
+    height: 70vh;/*70% of view port hight given no matter the amt of content*/
+}
+.game{
+    height: 60vmin;/*1% of the viewport's smaller dimensions--60% given of the dimenion relative to the parent div*/
+}
+.box{
+    height: 18vmin;/*vertical line 3 boxes so 60/3 */
+}
