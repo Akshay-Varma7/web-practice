@@ -38,7 +38,13 @@ inp.addEventListener("keydown",function(e){
     }
 })
 
-let delBtns = document.querySelectorAll(".delete");//collection
+ul.addEventListener("click",function (e){
+    if(e.target.nodeName == "BUTTON"){
+        let listItem = e.target.parentElement;//captured the list of particular buttons parent that was clicked
+        listItem.remove();
+    }
+});
+/*let delBtns = document.querySelectorAll(".delete");//collection
 for(delBtn of delBtns){//iterates all buttons
 
     delBtn.addEventListener("click",function (){//in that iteration if click then trigger
@@ -46,5 +52,5 @@ for(delBtn of delBtns){//iterates all buttons
         console.log(par);
         par.remove();
     });
-}
+}*/
 //here the eventlisteners get added to only existing elements not the ones added in browser
