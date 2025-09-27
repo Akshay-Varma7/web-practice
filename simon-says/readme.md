@@ -1,3 +1,4 @@
+always breakdown problem as far as possible
 0.basic visual
 <br>
 1.start game
