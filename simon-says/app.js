@@ -35,6 +35,7 @@ function levelUp(){
     let randomColor = btns[randomIdx];
     let randomBtn = document.querySelector(`.${randomColor}`);// . for class+ `` string 
 
+    gameSeq.push(randomColor);
     gameFlash(randomBtn);
 }
 //3
@@ -42,6 +43,11 @@ function btnPress(){
     //this helps us to find the btn for which event triggered
     let btn = this;
     userFlash(btn);
+
+    let userColor = btn.getAttribute("id");
+    userSeq.push(userColor);
+
+    checkAns();
 }
 function userFlash(btn){//used 1.user click flash
     btn.classList.add("userFlash");//shld exist in css
@@ -49,7 +55,18 @@ function userFlash(btn){//used 1.user click flash
         btn.classList.remove("userFlash");
     },250);
 }
+
 let allBtns = document.querySelectorAll(".btn");//collection
 for(btn of allBtns){
     btn.addEventListener("click",btnPress);
+}
+//4 
+function checkAns(){//needed after we press the btn
+    let idx = level-1;//level is global//tracking the last is enough
+
+    if(gameSeq[idx] == userSeq[idx]){
+        console.log("same value");
+    }else{
+        i.innerText =`Game Over! Press any key to start.`;
+    }
 }
