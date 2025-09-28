@@ -61,11 +61,16 @@ for(btn of allBtns){
     btn.addEventListener("click",btnPress);
 }
 //4 
-function checkAns(){//needed after we press the btn
-    let idx = level-1;//level is global//tracking the last is enough
+function checkAns(){//needed after we press the btn each time
+    let idx = level-1;//level is global
 
-    if(gameSeq[idx] == userSeq[idx]){
-        console.log("same value");
+    if(gameSeq[idx] == userSeq[idx]){//2 possibilities
+        if(userSeq.length() == gameSeq.length()){
+            levelUp();
+        }else{// wait for user to 
+
+        }
+        
     }else{
         i.innerText =`Game Over! Press any key to start.`;
     }
