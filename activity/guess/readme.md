@@ -1,0 +1,1 @@
+fun activity- basic prompts+ Math.random()
