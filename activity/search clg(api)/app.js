@@ -23,7 +23,8 @@ inp.addEventListener("keydown", async function(e) {//2nd arg is callback functio
 
 function show(colArr){
     let list =document.querySelector("#list");
-    list.innerText=""; 
+    list.innerText=""; //clears all <li> child elements too, because setting innerText replaces the element's entire content (it removes all child nodes, not just text)
+
     for(col of colArr){//ul(List) has list of li
         console.log(col.name);//col is object
         let li =document.createElement("li")
