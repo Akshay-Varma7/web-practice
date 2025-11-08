@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onReview</title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <h2>Movies :</h2>   
+    <ul class="movies-grid">
+        <% movies.forEach(function(movie){ %>
+            <li>
+                <h3><%= movie.name %> (<%= movie.releaseYear %>)</h3>
+                <img src="<%= movie.img %>" alt="<%= movie.name %>" width="200"/><!--describe the image if it can’t be displayed.+ helps in SEO search engine-->
+                <h4>directed by: <%= movie.director %></h4>
+                <br>
+                <a href="http://localhost:8080/posts/<%=movie.name%>">reviews</a><!--added while rendering here-->
+            </li>
+        <% }); %>
+    </ul> 
+    <br>
+    <br>
+    <br>
+    <a href="http://localhost:8080/add">Add a movie</a>
+ 
+</body>
+</html>

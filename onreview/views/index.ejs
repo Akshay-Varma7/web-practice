@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Posts</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <h1>Quora posts</h1>
+    <h1><%= m.name %> reviews :</h1>
     <% for(post of posts){ %>
         <div class="post"><!--whenever html comes it gets displayed not erase like function scope-->
             <h3 class="user">@ <%=post.username%></h3>
             <h4 class="content"> <%=post.content%></h4>
-            <a href="http://localhost:8080/posts/<%=post.id%>">See in detail</a>
-            <a href="http://localhost:8080/posts/<%=post.id%>/edit">Edit</a>
-            <form method="post" action="/posts/<%=post.id%>?_method=DELETE">
+            <a href="http://localhost:8080/posts/<%=m.name%>/<%=post.id%>">See in detail</a>
+            <a href="http://localhost:8080/posts/<%=m.name%>/<%=post.id%>/edit">Edit</a>
+            <form method="post" action="/posts/<%=m.name%>/<%=post.id%>?_method=DELETE">
                 <button>Delete Post</button>
             </form>
             
@@ -22,6 +22,6 @@
     <%}%>
     <br>
     <br>
-    <a href="http://localhost:8080/posts/new">create a post</a><!--http works but https dosent-->
+    <a href="http://localhost:8080/posts/<%=m.name%>/new">create a post</a><!--http works but https dosent-->
 </body>
 </html>
