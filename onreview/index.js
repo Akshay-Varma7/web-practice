@@ -54,6 +54,45 @@ let movies = [
                 content : "great movie"
            }
         ]
+    },
+    {
+        name: "titanic",
+        img:"/images/titanic.jpg",
+        director: "james cameron",
+        releaseYear:1997,
+        review : [
+            {
+                id : uuidv4(),//string unique id
+                username : "akshay",
+                content : "great movie"
+           }
+        ]
+    },
+    {
+        name: "bay watch",
+        img:"/images/baywatch.jpg",
+        director: "seth gordon",
+        releaseYear:2017,
+        review : [
+            {
+                id : uuidv4(),//string unique id
+                username : "akshay",
+                content : "great movie"
+           }
+        ]
+    },
+    {
+        name: "star wars",
+        img:"/images/star-wars.jpg",
+        director: "george lucas",
+        releaseYear:2005,
+        review : [
+            {
+                id : uuidv4(),//string unique id
+                username : "akshay",
+                content : "great movie"
+           }
+        ]
     }
 ];
 
